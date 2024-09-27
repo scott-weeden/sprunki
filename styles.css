@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #FF69B4;
+    --secondary-color: #FFD700;
+    --tertiary-color: #808080;
+    --background-color: #87CEEB;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.sponsored-content {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 0.5rem;
+}
+
+.sponsored-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.sponsored-content li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.sponsored-content a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.sponsored-content a:hover {
+    background-color: rgba(255,255,255,0.4);
+    text-decoration: underline;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+        padding: 1em;
+        background: var(--secondary-color);
+        cursor: pointer;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    .nav-toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+}
+
+.section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.game-section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.game-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.game-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.video-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.character-image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.character-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+#privacy-policy h3 {
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+#privacy-policy ul {
+    margin-left: 20px;
+}
+
+#privacy-policy li {
+    margin-bottom: 10px;
+}
